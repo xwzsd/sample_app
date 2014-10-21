@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/heroku/rails3_serve_static_assets.git
+  revision: 84910ceb4ca2851d650e66d3b22f5008acf253f8
+  specs:
+    rails3_serve_static_assets (0.0.1)
+
+GIT
+  remote: git://github.com/heroku/rails_log_stdout.git
+  revision: f9a92758f2d5dca5a88bf899a83256302f16ab6c
+  specs:
+    rails_log_stdout (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,8 +50,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    celluloid (0.15.2)
-      timers (~> 1.1.0)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
     coderay (1.1.0)
@@ -49,10 +61,10 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.1)
+    coffee-script-source (1.8.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
-    execjs (2.2.1)
+    execjs (2.2.2)
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.2.1)
@@ -60,7 +72,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.1.2)
       i18n (~> 0.5)
-    ffi (1.9.3)
+    ffi (1.9.6)
     formatador (0.2.5)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -76,6 +88,7 @@ GEM
       guard (>= 1.1)
       spork (>= 0.8.4)
     hike (1.2.3)
+    hitimes (1.2.2)
     i18n (0.6.11)
     jbuilder (1.0.2)
       activesupport (>= 3.0.0)
@@ -85,7 +98,7 @@ GEM
     json (1.8.1)
     libnotify (0.8.0)
       ffi (>= 1.0.11)
-    listen (2.7.9)
+    listen (2.7.11)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -98,11 +111,11 @@ GEM
     mini_portile (0.6.0)
     minitest (4.7.5)
     multi_json (1.10.1)
-    nokogiri (1.6.3)
+    nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     pg (0.15.1)
     polyglot (0.3.5)
-    pry (0.10.0)
+    pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -181,13 +194,14 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    timers (1.1.0)
+    timers (4.0.1)
+      hitimes
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.1.1)
       coffee-rails
-    tzinfo (0.3.40)
+    tzinfo (0.3.41)
     uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -215,7 +229,9 @@ DEPENDENCIES
   libnotify (= 0.8.0)
   pg (= 0.15.1)
   rails (= 4.0.2)
+  rails3_serve_static_assets!
   rails_12factor (= 0.0.2)
+  rails_log_stdout!
   rspec-rails (= 2.13.1)
   sass-rails (~> 4.0.0)
   sdoc (= 0.3.20)
